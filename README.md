@@ -1,61 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Screenshots
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src= ![WhatsApp Image 2025-05-26 at 06 51 55_52b81b04](https://github.com/user-attachments/assets/96a61160-6756-4557-bf6c-ef221877257f)
+
+<img src=![WhatsApp Image 2025-05-26 at 06 52 48_f1d7b1d9](https://github.com/user-attachments/assets/862a491b-c524-43f4-bbc6-0aba47b9077d)
+
+<img src=![WhatsApp Image 2025-05-26 at 06 53 36_a06bbc10](https://github.com/user-attachments/assets/0c9a41ac-91f6-4d78-8bfe-10e3fa709541)
+
 </p>
 
-## About Laravel
+<p align="center">
+  <img src=![WhatsApp Image 2025-05-26 at 06 53 37_73d9e940](https://github.com/user-attachments/assets/83ff0ac8-da71-4de4-823f-9e36652def29)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+  <img src=![WhatsApp Image 2025-05-26 at 06 53 37_722ee224](https://github.com/user-attachments/assets/da4b43f7-9898-427f-9200-50364c197352)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  <img src=![WhatsApp Image 2025-05-26 at 06 51 55_52b81b04](https://github.com/user-attachments/assets/ff22348e-d9e6-428c-bf99-04486df29baf)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+      </p>
 
-## Learning Laravel
+Bookstore Management System
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+About Laravel
+Laravel is a popular open-source PHP framework used for web application development. It follows the MVC (Model-View-Controller) architecture and emphasizes elegant syntax and developer productivity. Laravel provides built-in tools like routing, authentication, and ORM (Eloquent) to simplify complex tasks. It also supports features like Blade templating, RESTful APIs, and robust security mechanisms.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+Features:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Book CRUD Operations (Create, Read, Update, Delete)
+Advanced Search (by title or author)
+Pagination (50 books per page)
+Responsive Design (Works on all devices)
+Modern UI (Bootstrap 5)
 
-### Premium Partners
+🛠 Technologies Used
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Backend: Laravel 10
+Frontend: Bootstrap 5
+Database: MySQL
+Pagination: Laravel Paginator
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+ Installation:
 
-## Code of Conduct
+Clone the repository
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+git clone https://github.com/username/bookstore.git
+cd bookstore
+Install dependencies
 
-## Security Vulnerabilities
+composer install
+npm install
+Setup environment
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+cp .env.example .env
+php artisan key:generate
+Configure database
+Edit .env file:
 
-## License
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=bookstore
+DB_USERNAME=root
+DB_PASSWORD=
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+php artisan migrate --seed
+Start development server
+
+php artisan serve
+
+📂 Project Structure
+
+bookstore-management/
+├── app/               # Core application logic
+│   ├── Models/        # Database models
+│   └── Http/          # Controllers
+├── database/          # Migrations and seeders
+├── public/            # Publicly accessible files
+├── resources/         # Views and assets
+├── routes/            # Application routes
+└── vendor/            # Composer dependencies
+
+ Usage:
+Access the application at http://localhost:8000
+Default routes:
+/ - Book listing
+/books/create - Add new book
+/books/{id}/edit - Edit book
+
+
+📝 License
+This project is open-source and available under the MIT License
